@@ -3,7 +3,7 @@
 > Note: 
 > * requires rsync >= 3.1 on all source and target machines
 
-Real-time bi-directional synchronization tools between two data centers base on [lsyncd](https://github.com/axkibe/lsyncd). The sync direction control by DNS and master to slave.
+Real-time bi-directional synchronization tools between two data centers base on [lsyncd](https://github.com/axkibe/lsyncd). The sync direction control by DNS from master to slave.
 
 ### Install Packages
 - [lsyncd](https://centos.pkgs.org/7/epel-x86_64/lsyncd-2.2.2-1.el7.x86_64.rpm.html)
