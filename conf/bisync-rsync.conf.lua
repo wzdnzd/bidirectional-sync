@@ -1,6 +1,5 @@
 --   @Author  : kevinx
 --   @Time    : 2019-03-20
---   @Contact : kevinx@synnex.com
 
 -- need install lua lib 'lua-socket' (yum install -y lua-socket)
 local socket = require("socket")
