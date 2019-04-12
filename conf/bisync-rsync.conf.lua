@@ -226,7 +226,7 @@ for _, v in pairs(profile) do
                 compress = true,
                 verbose = true,
                 perms = true,
-                rsh = "/usr/bin/ssh -p 22 -o StrictHostKeyChecking=no"
+                rsh = "/usr/bin/ssh -p " .. profile.port .. " -o StrictHostKeyChecking=no"
             }
         }
 
