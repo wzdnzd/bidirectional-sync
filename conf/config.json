@@ -1,0 +1,60 @@
+{
+  "maxDelays": 200,
+  "us_owncloud": {
+    "host": "target",
+    "domain": "us-p1.org",
+    "source": "/data/nfs/owncloud",
+    "targetDir": "/data/nfs/owncloud",
+    "exclude": [
+      ".*",
+      "*.bak",
+      "*.tmp",
+      "*.swp",
+      "/data/*/files/*/PROD/425/**"
+    ],
+    "excludeFrom": "exclude.lst",
+    "delay": 30,
+    "delete": true,
+    "waitTime": 7200,
+    "script": "../scripts/sync-us.sh"
+  },
+  "wcla_owncloud": {
+    "host": "target",
+    "domain": "wcla-p1.org",
+    "source": "/data/nfs/owncloud",
+    "targetDir": "/data/nfs/owncloud",
+    "exclude": [
+      ".*",
+      "*.bak",
+      "*.tmp",
+      "*.swp",
+      "/data/*/files/*/PROD/100/**"
+    ],
+    "excludeFrom": "exclude.lst",
+    "delay": 30,
+    "delete": true,
+    "waitTime": 7200,
+    "script": "../scripts/sync-wcla.sh"
+  },
+  "images": {
+    "host": "target",
+    "domain": "us-p1.org",
+    "source": "/data/nfs/images/prod-images/data",
+    "targetDir": "/data/nfs/images/prod-images/data",
+    "exclude": [
+      ".*",
+      "*.bak",
+      "*.tmp",
+      "*.swp"
+    ],
+    "excludeFrom": "exclude.lst",
+    "delay": 30,
+    "delete": true,
+    "waitTime": 7200,
+    "script": "../scripts/sync-us.sh"
+  },
+  "nodaemon": true,
+  "hostname": "localhost",
+  "port": 22,
+  "bwlimit": 2048
+}
