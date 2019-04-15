@@ -120,7 +120,7 @@ function collect(agent, exitcode)
                         agent.source, '". Terminating since "insist" is not set.'
                 )
 
-                terminate(-1) -- ERRNO
+                terminate(-1)
             end
         elseif rc == 'die'
         then
